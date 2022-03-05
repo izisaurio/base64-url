@@ -1,10 +1,10 @@
 <?php
 
-require "../vendor/autoload.php";
+require '../vendor/autoload.php';
 
 use Inn\Base64Url;
 
-$encoded = Base64Url::encode("izisaurio");
+$encoded = Base64Url::encode('izisaurio');
 
 var_dump($encoded);
 

@@ -21,8 +21,8 @@ class Base64Url
 	public static function encode($text)
 	{
 		return str_replace(
-			["+", "/", "="],
-			["-", "_", ""],
+			['+', '/', '='],
+			['-', '_', ''],
 			base64_encode($text)
 		);
 	}
@@ -37,6 +37,6 @@ class Base64Url
 	 */
 	public static function decode($base64URL)
 	{
-		return base64_decode(str_replace(["-", "_"], ["+", "/"], $base64URL));
+		return base64_decode(str_replace(['-', '_'], ['+', '/'], $base64URL));
 	}
 }
